@@ -1,0 +1,25 @@
+{
+    "siguiente_id": 5,
+    "tareas": [
+        {
+            "id": 1,
+            "texto": "pan",
+            "hecho": true
+        },
+        {
+            "id": 2,
+            "texto": "leche",
+            "hecho": true
+        },
+        {
+            "id": 3,
+            "texto": "bencina",
+            "hecho": false
+        },
+        {
+            "id": 4,
+            "texto": "leña",
+            "hecho": false
+        }
+    ]
+}

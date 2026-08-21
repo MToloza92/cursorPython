@@ -1,12 +1,19 @@
-#script para analizar un archivo csv y crear un scatter plot
+"""
+Santander Open Academy — Cursor con Python: desarrollo inteligente con IA
+Módulo práctico — análisis de datos (pandas + matplotlib).
 
+Lee datos.csv, calcula media / mediana / desviación y grafica col1 vs col2.
+Práctica con Cursor: pedir librerías, fórmulas y el scatter; luego validar
+que el CSV y los nombres de columna coinciden con lo que imprime el script.
+pip install pandas matplotlib
+"""
 
 import pandas as pd
 import matplotlib.pyplot as plt
 
 ARCHIVO_CSV = "datos.csv"
 
-df = pd.read_csv(ARCHIVO_CSV)
+df = pd.read_csv(ARCHIVO_CSV)  # tabla en memoria (DataFrame)
 
 print(f"Análisis de: {ARCHIVO_CSV}\n")
 print("Estadísticas por columna:")

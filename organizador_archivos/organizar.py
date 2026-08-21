@@ -1,3 +1,14 @@
+"""
+Santander Open Academy — Cursor con Python: desarrollo inteligente con IA
+Módulo práctico — automatización del sistema de archivos.
+
+Clasifica Descargas por extensión (Imagenes, Documentos, Videos, Musica, Otros).
+Práctica con Cursor: preguntar pathlib (suffix, iterdir, rename, mkdir).
+La IA recuerda la API; tú decides la carpeta y pruebas antes en datos de ejemplo.
+
+Cuidado: mueve archivos reales. No ejecutar a ciegas en carpetas importantes.
+"""
+
 from pathlib import Path
 
 carpeta_objetivo = Path.home() / "Downloads"
@@ -11,6 +22,7 @@ categorias = {
 
 categoria_predeterminada = "Otros"
 
+# Dict invertido: ".pdf" -> "Documentos" (búsqueda directa).
 extension_a_categoria = {}
 
 for categoria, extensiones in categorias.items():

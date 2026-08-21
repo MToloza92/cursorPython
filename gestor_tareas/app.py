@@ -1,17 +1,25 @@
+"""
+Santander Open Academy — Cursor con Python: desarrollo inteligente con IA
+Módulo práctico — framework web Flask (el curso también menciona Django).
+
+Gestor de tareas: rutas, formulario POST, plantilla Jinja2 y persistencia JSON.
+Práctica con Cursor: generar el esqueleto Flask y revisar rutas, names del
+formulario y el ciclo request → lógica → redirect. Git (commit/push) forma
+parte del flujo avanzado del curso para evidenciar el proyecto práctico.
+"""
+
 import json
 
 from flask import Flask, request, redirect, render_template
 
 app = Flask(__name__)
 
-# Lista donde almacenaremos las tareas
 tareas = []
-
-# ID que tendrá la próxima tarea
 siguiente_id = 1
 
 
 def cargar_datos():
+    """Carga tareas.json al arrancar; si no hay archivo, lista vacía."""
     global tareas, siguiente_id
 
     try:
@@ -24,7 +32,9 @@ def cargar_datos():
     except FileNotFoundError:
         pass
 
+
 def guardar_datos():
+    """Persiste el estado tras cada alta o completar (sobrevive al restart)."""
     with open("tareas.json", "w", encoding="utf-8") as archivo:
         json.dump(
             {
@@ -35,6 +45,7 @@ def guardar_datos():
             ensure_ascii=False,
             indent=4
         )
+
 
 def agregar_tarea(texto):
     global siguiente_id
@@ -83,6 +94,7 @@ def completar(id):
     completar_tarea(id)
 
     return redirect("/")
+
 
 cargar_datos()
 

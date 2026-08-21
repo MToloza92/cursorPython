@@ -12,7 +12,7 @@ Este repositorio forma parte de mi proceso de **formación continua como Analist
 **Plataforma:** [Santander Open Academy](https://app.santanderopenacademy.com/)
 **Área:** Desarrollo de software / Python / Inteligencia Artificial
 **Modalidad:** Online
-**Estado:** ⏳ En progreso
+**Estado:** ✅ Completado y aprobado — 21 de agosto de 2026
 
 El curso está enfocado en explorar cómo **Cursor y las herramientas de Inteligencia Artificial pueden integrarse al desarrollo con Python**, permitiendo mejorar diferentes etapas del proceso de programación.
 
@@ -107,11 +107,14 @@ Mi objetivo no es solamente aprender a utilizar una herramienta, sino **comprend
 
 ## 🏆 Certificación
 
-Una vez completado el curso, incorporaré en esta sección la información correspondiente a la certificación obtenida.
+**Certificado de finalización de Mauricio Toloza**
 
-**Estado:** ⏳ En proceso
+> **Curso:** Cursor con Python: desarrollo inteligente con IA
+> **Finalizado:** 21 de agosto de 2026
 
-La certificación formará parte de mi evidencia de capacitación y aprendizaje continuo.
+**Estado:** ✅ Aprobado
+
+La certificación forma parte de mi evidencia de capacitación y aprendizaje continuo.
 
 ---
 

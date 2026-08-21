@@ -1,5 +1,10 @@
-#este script crea un notebook con un ejemplo basico de analisis de datos con Python
+"""
+Santander Open Academy — Cursor con Python: desarrollo inteligente con IA
 
+Genera note.ipynb por código: un notebook es JSON con celdas markdown/código.
+Práctica con Cursor: la IA puede crear notebooks o este script que los
+escribe. Útil para documentar análisis junto al código, no solo scripts .py.
+"""
 
 import json
 from pathlib import Path

@@ -1,34 +1,34 @@
-#Programa para contar palabras en un texto#
+"""
+Santander Open Academy — Cursor con Python: desarrollo inteligente con IA
 
+Contador de palabras en un archivo de texto.
+Práctica con Cursor: lectura de ficheros, try/except y expresiones regulares.
+La IA suele sugerir encoding='utf-8' y FileNotFoundError; conviene
+comprobar la ruta que escribe el usuario.
+"""
 
-#pedir al usuaurio la ruta de un archivo
+import re
+
 archivo = input("Ingrese la ruta del archivo: ")
+
 try:
-    with open(archivo, 'r', encoding='utf-8') as file:
+    with open(archivo, "r", encoding="utf-8") as file:
         texto = file.read()
 except FileNotFoundError:
     print("El archivo no existe")
     exit()
 
-# Separar el contenido en palabras
-
-import re
-
+# \w+ agrupa letras/números; lower() unifica MAYÚSCULAS y minúsculas.
 palabras = re.findall(r"\w+", texto.lower())
-
 total_palabras = len(palabras)
 
 print(f"Total palabras: {total_palabras}")
 
 
-
-
-
-
-##funcion para enumerar pares hasta el 40##
 def enumerar_pares():
+    """Ejercicio extra de bucles (mismo patrón que hello world.py)."""
     for i in range(2, 41, 2):
         print(i)
 
-enumerar_pares()
 
+enumerar_pares()
